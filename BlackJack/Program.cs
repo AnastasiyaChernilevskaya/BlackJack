@@ -10,7 +10,7 @@ namespace BlackJack
     {
         static void Main(string[] args)
         {
-            Logic l = new Logic();
+            GameLogic l = new GameLogic();
         }
     }
 }

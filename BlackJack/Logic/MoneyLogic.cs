@@ -44,7 +44,7 @@ namespace BlackJack
                     flag = false;
                 }
 
-            } while (flag);            
+            } while (flag);
         }
 
         public static void CheckGoal(User user)
@@ -66,11 +66,9 @@ namespace BlackJack
             if (userWinner.IsHuman)
             {
                 userWinner.Money += userWinner.Bet;
+                return;
             }
-            else
-            {
-                userWinner.Opponent.Money -= userWinner.Opponent.Bet;
-            }
+            userWinner.Opponent.Money -= userWinner.Opponent.Bet;
         }
 
         public static bool IsMoneyOnBorder(User user)

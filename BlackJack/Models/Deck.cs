@@ -9,5 +9,6 @@ namespace BlackJack
     class Deck
     {
         public List<Card> Cards { get; set; }
+
     }
 }
