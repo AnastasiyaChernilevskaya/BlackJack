@@ -54,13 +54,15 @@ namespace BlackJack
             MoneyLogic.CheckBet(_human);
 
             _preparations.CardToHand(_human);
-            //Communication.ShowPoints(_human);
-            if (!_preparations.MainEvent(_human))
+            if (_preparations.MainEvent(_human))
             {
-                if (!_preparations.MainEvent(_pc)) //
-                {
-                    WinnerByPoints();
-                }
+                MoneyOvered();
+                return;
+            }
+
+            if (!_preparations.MainEvent(_pc))
+            {
+                WinnerByPoints();
             }
             MoneyOvered();
         }

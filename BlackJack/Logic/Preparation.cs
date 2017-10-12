@@ -13,8 +13,6 @@ namespace BlackJack
         const int _allTypesCards = 13;
 
         Deck _deck;
-        //User _human;
-        //User _pc;
 
 
         public void CreateDeck()
