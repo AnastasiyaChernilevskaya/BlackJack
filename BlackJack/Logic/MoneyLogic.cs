@@ -34,12 +34,15 @@ namespace BlackJack
             do
             {
                 bet = Communication.SetBet();
-                if (bet > user.Money || bet <= 0)
+                if (bet > user.Money || bet <= 0)           //not correct bet
                 {
-                    flag = false;
-                    Communication.SetBet();
+                    flag = true;
                 }
-                else user.Bet = bet;
+                else                                          //correct bet
+                {
+                    user.Bet = bet;
+                    flag = false;
+                }
 
             } while (flag);            
         }

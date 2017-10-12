@@ -101,7 +101,6 @@ namespace BlackJack
         public static void Sorre()
         {
             Console.WriteLine("You have no money :=O");
-        }
-
+        }        
     }
 }

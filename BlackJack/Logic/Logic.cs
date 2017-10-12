@@ -195,6 +195,7 @@ namespace BlackJack
                 Communication.LineToSeparate();
                 ClearHand(_human);
                 ClearHand(_pc);
+                _human.Bet = 0;
 
                 OneRound();
             }
